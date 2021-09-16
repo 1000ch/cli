@@ -1,0 +1,28 @@
+{
+  "name": "1000ch",
+  "version": "0.0.0",
+  "description": "1000ch is a software engineer working on the web.",
+  "license": "MIT",
+  "repository": "1000ch/1000ch",
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogosensui@gmail.com",
+    "url": "https://github.com/1000ch"
+  },
+  "bin": {
+    "1000ch": "cli.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "1000ch"
+  ],
+  "dependencies": {
+    "import-jsx": "^2.0.0",
+    "ink": "^2.1.1",
+    "ink-select-input": "^3.1.1",
+    "open": "^6.3.0",
+    "react": "^16.8.6"
+  }
+}
