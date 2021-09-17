@@ -1,9 +1,9 @@
 'use strict';
-
 const React = require('react');
 const {Box, Text} = require('ink');
 const SelectInput = require('ink-select-input').default;
 const open = require('open');
+const {exit} = require('./cli.js');
 
 const handleSelect = item => {
   if (item.url) {
@@ -26,33 +26,33 @@ const createItems = items => {
 const items = createItems([
   {
     label: 'Website',
-    url: 'https://shogosensui.com'
+    url: 'https://shogosensui.com',
   },
   {
     label: 'Twitter',
-    url: 'https://twitter.com/1000ch'
+    url: 'https://twitter.com/1000ch',
   },
   {
     label: 'GitHub',
-    url: 'https://github.com/1000ch'
+    url: 'https://github.com/1000ch',
   },
   {
-    label: 'Blog',
-    url: 'https://1000ch.net'
+    label: 'Weblog',
+    url: 'https://1000ch.net',
   },
   {
     label: 'Podcast',
-    url: 'https://strobo.fm'
+    url: 'https://strobo.fm',
   },
   {
-    label: '---------'
+    label: '---------',
   },
   {
     label: 'Quit',
     action() {
-      process.exit();
-    }
-  }
+      exit();
+    },
+  },
 ]);
 
 module.exports = () => (
